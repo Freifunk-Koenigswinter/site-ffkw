@@ -25,7 +25,8 @@
 
   -- List of NTP servers in your community.
   -- Must be reachable using IPv6!
-  ntp_servers = {'fdd3:5d20:b5dd:fc00::1'},
+  ntp_servers = {'fdd3:5d18:b5dd:fc00:2000::1',
+  fdd3:5d18:b5dd:fc00:3000::1},
 
   -- Wireless regulatory domain of your community.
   regdom = 'DE',
@@ -68,7 +69,7 @@
   -- The next node feature allows clients to always reach the node it is
   -- connected to using a known IP address.
   next_node = {
-    name= { 'nextnode.location.community.example.org', 'nextnode', 'nn' },
+    name= {'nextnode', 'nn' },
     -- anycast IPs of all nodes
     ip4 = '10.80.0.255',
     ip6 = 'fdd3:5d20:b5dd:fc00::ffff',
