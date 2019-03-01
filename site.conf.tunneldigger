@@ -25,8 +25,10 @@
 
   -- List of NTP servers in your community.
   -- Must be reachable using IPv6!
-  ntp_servers = {'fdd3:5d18:b5dd:fc00:2000::1',
-  fdd3:5d18:b5dd:fc00:3000::1},
+  ntp_servers = {
+                'fdd3:5d18:b5dd:fc00:2000::1',
+                'fdd3:5d18:b5dd:fc00:3000::1',
+        },
 
   -- Wireless regulatory domain of your community.
   regdom = 'DE',
