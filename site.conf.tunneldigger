@@ -161,6 +161,7 @@ tunneldigger = {
    enabled = true,
    brokers = {
     'supernode01.freifunk-koenigswinter.de:20201',
+    'supernode02.freifunk-koenigswinter.de:20202',
    },
   },
 		
