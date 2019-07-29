@@ -101,63 +101,7 @@
   mesh_vpn = {
   enabled = false,
           mtu = 1398,
-    fastd = {
-            configurable = true,
-            -- List of crypto-methods to use.
-            methods = {'salsa2012+umac'},
-            enabled = true,
-            groups = {
-                backbone = {
-                        -- Limit number of connected peers to reduce bandwidth.
-                        limit = 1,
-                       -- List of peers.
-                        peers = {
-                                supernode01 = {
-       key = '8882a94dc8e84dd517dd87674f09a3a3b0da8ec15f54afa874ab67d24ff5e172',
-       remotes = {'ipv4 "supernode01.freifunk-koenigswinter.de" port 20101'},
-      },
-      supernode02 = {
-       key = '17ea86358e85b769918f33982957d2098166f3886f50e21c10d679e79ff9c498',
-       remotes = {'ipv4 "supernode02.freifunk-koenigswinter.de" port 20102'},
-      },
-      supernode03 = {
-       key = '925d133b3ead6b3a7731922cc6548b34bba8b7c78dd35a7485d14a89e8013d6a',
-       remotes = {'ipv4 "supernode03.freifunk-koenigswinter.de" port 20103'},
-      },
-      supernode04 = {
-       key = '97b802b8b4a2c7aa46e60b60b1b285c6e775e093a414753a085baaf94df1a9d3',
-       remotes = {'ipv4 "supernode04.freifunk-koenigswinter.de" port 20104'},
-      },
-      supernode05 = {
-       key = 'd4a5a6643c952f6743b19714bb9f21a0a2d05983da5947c8bc55111420ac8ca4',
-       remotes = {'ipv4 "supernode05.freifunk-koenigswinter.de" port 20105'},
-      },
-      supernode06 = {
-       key = '9b355dc5baf4074821f08bc564619dd3e306b347565deff0014bfde34f54c5ae',
-       remotes = {'ipv4 "supernode06.freifunk-koenigswinter.de" port 20106'},
-      },
-      supernode07 = {
-       key = '1c09b8d400a98b3bf6473e438a95e2c2fa5871f3befb7936f9b0283eb22d22ca',
-       remotes = {'ipv4 "supernode07.freifunk-koenigswinter.de" port 20107'},
-      },
-      supernode08 = {
-       key = 'f99661d3de1fbc259ff8672c102156af5e741c8d499709c1f60e60997ea9381a',
-       remotes = {'ipv4 "supernode08.freifunk-koenigswinter.de" port 20108'},
-      },
-      supernode09 = {
-       key = 'dee1c2bbee9ebc0736586711858a310bf5e51aa525dd0e24ed03407fbfb120a0',
-       remotes = {'ipv4 "supernode09.freifunk-koenigswinter.de" port 20109'},
-      },
-      supernode10 = {
-       key = 'df889cb8d63cf29ce8ae28639de4584dfd2b1f35a36c4a761d24ce6eebf3c122',
-       remotes = {'ipv4 "supernode10.freifunk-koenigswinter.de" port 20110'},
-      },
-                                },
-                                },
-                        },
-        },
-		
-tunneldigger = {
+ tunneldigger = {
    enabled = true,
    brokers = {
     'supernode01.freifunk-koenigswinter.de:20300',
